@@ -1,0 +1,32 @@
+@use './colors' as *;
+
+@mixin mr($value) {
+  margin-right: $value;
+}
+
+@mixin mb($value) {
+  margin-bottom: $value;
+}
+
+@mixin p($value) {
+  padding: $value;
+}
+
+@mixin textStyles($fz, $fw, $color) {
+  font-size: $fz;
+  font-weight: $fw;
+  color: $color;
+}
+
+@mixin mainBtn($color, $bgColor) {
+  font-family: 'Unbounded';
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 20px 24px;
+  border-radius: 40px;
+  color: $color;
+  background-color: $bgColor;
+}

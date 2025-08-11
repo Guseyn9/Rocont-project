@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./scss/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="container header__container">
+          <img src="./img/logo.svg" alt="" class="header__logo">
+          <nav class="header__nav">
+            <img src="./img/logo.svg" alt="" class="header__nav-logo">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="" class="header__link">О системе</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__link">Архитектура</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__link">Мнения</a>
+              </li>
+              <li class="header__item header__item--active">
+                <a href="" class="header__link">Попробовать</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__link">Для своих</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="burger">
+            <span class="burger__item"></span>
+            <span class="burger__item"></span>
+            <span class="burger__item"></span>
+          </button>
+        </div>
+      </header>
+      <section class="banner">
+        <div class="container banner__container">
+          <img src="./img/banner.png" alt="" class="banner__img">
+          <div class="banner__content">
+            <h1 class="banner__title">Просто потому что можем</h1>
+            <p class="banner__descr">
+              Мы запустили основной цикл в 06:42. Результаты наблюдаются, но не зафиксированы.
+              Рекомендуем сохранять спокойствие до следующего сигнала.
+            </p>
+            <button class="main__btn banner__btn">
+              Попробовать просто так
+              <img src="./img/Arrow-light.svg" alt="" class="banner__btn-img">
+              <img src="./img/arrow-black.svg" alt="" class="banner__btn-img2">
+            </button>
+          </div>
+          <div class="banner__certificate">
+            <span class="banner__certificate-text">Сертификат есть. Но это не точно.</span>
+            <span class="banner__certificate-code">СГР №AM.01.01 .01.003.R.00 o47 4.06.24</span>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container advantages__container">
+          <h2 class="advantages__title">Это — не совсем то, что вы думаете</h2>
+          <div class="swiper advantages__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="slide-img" src="./img/slide-img1.jpg" alt="">
+                <div class="slide-content">
+                  <h3 class="slide1-title">Немного упругости</h3>
+                  <p class="slide1-descr">
+                    Чуть-чуть сияния, и ощущение, что вы о себе позаботились
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img class="slide-img" src="./img/slide-img2.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="slide-img" src="./img/slide-img3.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="slide-img" src="./img/slide-img4.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="slide-img" src="./img/slide-img5.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-button-prev">
+              <img src="./img/arrow-black.svg" alt="" class="prev-btn__img">
+            </div>
+            <div class="swiper-button-next">
+              <img src="./img/arrow-green.svg" alt="" class="next-btn__img">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="container feedback__container">
+          <div class="feedback__left">
+            <h2 class="feedback__title">Если вы тоже решили <br> «а почему бы и нет»</h2>
+            <ul class="feedback__list">
+              <li class="feedback__item">
+                <img src="./img/mini-arrow.svg" alt="" class="feedback__item-img">
+                <p class="feedback__item-descr">Можно заказать много</p>
+              </li>
+              <li class="feedback__item">
+                <img src="./img/mini-arrow.svg" alt="" class="feedback__item-img">
+                <p class="feedback__item-descr">Доступ возможен через северный интерфейс</p>
+              </li>
+              <li class="feedback__item">
+                <img src="./img/mini-arrow.svg" alt="" class="feedback__item-img">
+                <p class="feedback__item-descr">Можно просто поболтать</p>
+              </li>
+            </ul>
+          </div>
+          <div class="feedback__right">
+            <form action="#" class="feedback__form">
+              <div class="feedback__inputs">
+                <input type="text" class="feedback__input" required placeholder="Имя">
+                <input type="number" class="feedback__input" required placeholder="Телефон">
+              </div>
+              <label class="feedback__label">
+                <input type="checkbox" class="feedback__label-input" required>
+                <span class="feedback__label-checkmark">
+                  <img src="./img/Ellipse 18.svg" alt="" class="feedback__label-checkmark__img">
+                </span>
+                <span class="feedback__label-text">Согласен(-на) на обработку чего угодно — лишь бы форма работала</span>
+              </label>
+              <div>
+                <button class="feedback__btn">
+                Отправить
+                <img src="./img/arrow-green.svg" alt="" class="feedback__btn-img">
+              </button>
+              </div>
+              
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="container contacts__container">
+          <div class="contacts__content">
+            <h2 class="contacts__title">Контакты</h2>
+            <div class="contacts__block">
+              <img src="./img/Icon.svg" alt="" class="contacts__block-img">
+              <p class="contacts__block-text">Офис, где делают странные, но симпатичные вещи</p>
+            </div>
+            <div class="contacts__block">
+              <img src="./img/Icon2.svg" alt="" class="contacts__block-img">
+              <p class="contacts__block-text">Пн-Пт с 10:00 до 20:00</p>
+            </div>
+            <div class="contacts__block">
+              <div class="contacts__block-number">
+                <img src="./img/Icon3.svg" alt="" class="contacts__block-img">
+                <a href="+7(800)444-44-44" class="contacts__block-text contacts__block-link">8 (800) 444 44 44</a>
+              </div>
+              <div class="contacts__block-number">
+                <img src="./img/Icon3.svg" alt="" class="contacts__block-img">
+                <a href="+7(800)888-88-88" class="contacts__block-text contacts__block-link">8 (800) 888 88 88</a>
+              </div>
+            </div>
+            <div class="contacts__block">
+              <img src="./img/Icon4.svg" alt="" class="contacts__block-img">
+              <a href="example@mail.ru" class="contacts__block-text contacts__block-link">example@mail.ru</a>
+            </div>
+            <button class="contacts__btn">
+              Связться
+              <img src="./img/Arrow-light.svg" alt="" class="contacts__btn-img">
+            </button>
+          </div>
+          <div id="map" style="width: 545px;"></div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="footer__content">
+            <nav class="footer__nav">
+              <ul class="footer__list">
+                <li class="footer__item"><a href="" class="footer__link">О системе</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Архитектура</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Для своих</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Состав</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Отзывы</a></li>
+              </ul>
+            </nav>
+            <div class="footer__content-block">
+              <span class="footer__content-block__text">Коллаген © 2025</span>
+              <span class="footer__content-block__text">Политика обработки чего-то личного</span>
+            </div>
+          </div>
+          <img src="./img/logo.svg" alt="" class="footer__logo">
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

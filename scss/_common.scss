@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'Commissioner';
+  src: url('../../public/CommissionerRegular.woff2') format('woff2'),
+       url('../../public/CommissionerRegular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Commissioner';
+  src: url('../../public/CommissionerMedium.woff2') format('woff2'),
+       url('../../public/CommissionerMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('../../public/UnboundedBold.woff2') format('woff2'),
+       url('../../public/UnboundedBold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('../../public/UnboundedSemiBold.woff2') format('woff2'),
+       url('../../public/UnboundedSemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('../../public/UnboundedMedium.woff2') format('woff2'),
+       url('../../public/UnboundedMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+body {
+  font-family: 'Commissioner';
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+#app {
+  background-image: url('../img/appBg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#map .ymaps-2-1-79-controls__control_toolbar {
+  display: none;
+}
+
+#map .ymaps-2-1-79-controls__control {
+  display: none;
+}
+
+#map .ymaps-2-1-79-map-copyrights-promo {
+  display: none;
+}
+
+#map .ymaps-2-1-79-copyright__wrap {
+  display: none;
+}

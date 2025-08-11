@@ -1,0 +1,484 @@
+@use './index' as *;
+
+.header {
+  padding: 8px 10px;
+
+  &__container {
+    max-width: 1112px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $white;
+    border-radius: 24px;
+    @include p(16px 24px);
+    align-items: center;
+  }
+
+  &__nav-logo {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    cursor: pointer;
+  }
+
+  &__link {
+    font-size: 16px;
+    font-weight: 500;
+    color: $textColor;
+    transition: color .2s ease-in-out, backround-color .2s ease-in-out;
+  }
+
+  &__item:not(:last-child) {
+    @include mr(32px);
+  }
+    
+  &__item--active {
+    background-color: $green;
+    @include p(5px 16px);
+    border-radius: 40px;
+  }
+    
+  &__item:hover &__link {
+    color: $green;
+  }
+    
+  &__item--active &__link {
+    color: $white;
+  }
+    
+  &__item--active:hover &__link {
+    color: $white;
+  }
+}
+
+.burger {
+  display: none;
+}
+
+.banner {
+  @include mb(96px);
+  @include p(0 10px);
+
+  &__container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    max-width: 1032px;
+    // background-image: url('../../img/banner.png');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: right;
+    border-radius: 24px;
+    @include p(64px);
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content {
+    z-index: 2;
+  }
+
+  &__title {
+    max-width: 620px;
+    font-family: 'Unbounded';
+    @include textStyles(64px, 500, $white);
+    @include mb(32px);
+    line-height: 105%;
+  }
+
+  &__descr {
+    max-width: 421px;
+    @include textStyles(21px, 400, $white);
+    @include mb(32px);
+  }
+
+  &__btn {
+    position: relative;
+    @include mainBtn($white, $green);
+    padding-right: 80px;
+    justify-content: flex-end;
+    transition: color .2s ease-in-out, background-color .2s ease-in-out;
+
+    &:hover {
+      background-color: $white;
+      color: $textColor;
+    }
+
+    &:hover &-img {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    &:hover &-img2 {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &-img {
+      right: 16px;
+      position: absolute;
+      margin-left: 16px;
+      transition: opacity .2s ease-in-out, visibility .2s ease-in-out;
+    }
+
+    &-img2 {
+      right: 20px;
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .2s ease-in-out, visibility .2s ease-in-out;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__certificate {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &-text {
+      @include textStyles(16px, 400, $white);
+    }
+
+    &-code {
+      @include textStyles(16px, 400, $white);
+      text-transform: uppercase;
+    }
+  }
+}
+
+.advantages {
+  @include mb(96px);
+  @include p(0 10px);
+
+  &__container {
+    display: flex;
+    position: relative;
+  }
+
+  &__title {
+    max-width: 266px;
+    line-height: 105%;
+    font-family: 'Unbounded';
+    @include textStyles(40px, 500, $textColor);
+    @include mr(8px);
+  }
+}
+
+.swiper {
+  position: static;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.slide-content {
+  position: absolute;
+  bottom: 0;
+  @include p(0 0 32px 32px);
+}
+
+.slide-img {
+  max-width: 100%;
+  border-radius: 24px;
+}
+
+.slide1-title {
+  font-family: 'Unbounded';
+  @include textStyles(24px, 500, $white);
+  @include mb(8px);
+}
+
+.slide1-descr {
+  @include textStyles(16px, 400, $white);
+}
+
+.swiper-button-prev {
+  top: unset;
+  bottom: 0;
+}
+
+.swiper-button-next {
+  top: unset;
+  bottom: 0;
+  left: 64px;
+}
+
+.swiper-button-prev:after {
+  display: none;
+}
+
+.swiper-button-next:after {
+  display: none;
+}
+
+.feedback {
+  @include mb(96px);
+  @include p(0 10px);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    @include p(64px);
+    padding-right: 86px;
+    max-width: 1010px;
+    background-color: $green;
+    border-radius: 24px;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+  }
+
+  &__title {
+    font-family: 'Unbounded';
+    @include textStyles(35px, 500, $white);
+    @include mb(32px);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover &-img {
+      @include mr(15px);
+    }
+
+    &:not(:last-child) {
+      @include mb(16px);
+    }
+
+    &-img {
+      @include mr(8px);
+      transition: margin-right .2s ease-in-out;
+    }
+
+    &-descr {
+      @include textStyles(21px, 500, $white);
+    }
+  }
+
+  &__right {
+    max-width: 450px;
+  }
+
+  &__form {
+    max-width: 450px;
+  }
+
+  &__input {
+    width: 100%;
+    font-family: 'Commissioner';
+    @include p(12px 24px);
+    padding-right: 0;
+    @include textStyles(16px, 400, $textColor);
+    background-color: $white;
+    border-radius: 40px;
+    @include mb(8px);
+    outline: none;
+    border: none;
+  }
+
+  &__label {
+    cursor: pointer;
+    display: flex;
+    @include mb(16px);
+
+    &-input {
+      display: none;
+    }
+
+    &-checkmark {
+      @include mr(8px);
+    }
+
+    &-input:checked ~ &-checkmark {
+      background-image: url('../../img/Fill\ 437.svg');
+      background-repeat: no-repeat;
+	    background-position: top 4px right 3px; 
+    }
+
+    &-text {
+      @include textStyles(12px, 400, $white);
+    }
+  }
+
+  &__btn {
+    @include mainBtn($textColor, $white);
+    transition: color .2s ease-in-out, background-color .2s ease-in-out;
+
+    &:hover &-img {
+      margin-left: 20px;
+    }
+
+    &-img {
+      transition: margin-left .2s ease-in-out;
+      margin-left: 8px;
+    }
+  }
+}
+
+.contacts {
+  @include p(0 10px);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    background-color: $white;
+    border-radius: 24px;
+    @include p(64px);
+    @include mr(8px);
+  }
+
+  &__title {
+    font-family: 'Unbounded';
+    @include textStyles(40px, 500, $textColor);
+    @include mb(32px);
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      @include mb(16px);
+    }
+
+    &:nth-child(4) {
+      justify-content: space-between;
+    }
+
+    &:nth-child(5) {
+      @include mb(32px);
+    }
+
+    &-img {
+      @include mr(8px);
+    }
+
+    &-text {
+      @include textStyles(18px, 500, $textColor);
+      transition: color .2s ease-in-out;
+    }
+
+    &-link {
+      &:hover {
+        color: $green;
+      }
+    }
+
+    &-number {
+      display: flex;
+      align-items: center;
+
+      &:first-child {
+        @include mr(8px);
+      }
+    }
+  }
+
+  &__btn {
+    @include mainBtn($white, $green);
+
+    &:hover &-img {
+      margin-left: 20px;
+    }
+
+    &-img {
+      margin-left: 8px;
+      transition: margin-left .2s ease-in-out;
+    }
+  }
+
+  #map  {
+    min-height: 100%;
+  }
+
+  .ymaps-2-1-79-map {
+    min-height: 100%;
+  }
+
+  .ymaps-2-1-79-inner-panes {
+    border-radius: 24px;
+  }
+}
+
+.footer {
+  @include p(32px 10px);
+
+  &__container {
+    display: flex;
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mr(32px);
+
+    &-block {
+      display: flex;
+      flex-direction: column;
+
+      &__text {
+        @include textStyles(16px, 400, $textColor);
+
+        &:first-child {
+          @include mb(16px);
+        }
+      }
+    }
+  }
+
+  &__list {
+    max-width: 350px;
+    flex-wrap: wrap;
+    display: flex;
+    @include mr(24px);
+  }
+
+  &__item {
+    @include mb(16px);
+
+    @include mr(32px);
+  }
+
+  &__link {
+    @include textStyles(16px, 400, $textColor);
+    transition: color .2s ease-in-out;
+
+    &:hover {
+      color: $green;
+    }
+  }
+  
+  &__logo {
+    max-width: 130px;
+  }
+}
