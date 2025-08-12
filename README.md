@@ -13,12 +13,11 @@
 ---
 
 ### 📌 Мои проекты
-
-- **Landing Page "TravelGo"** — адаптивный лендинг с анимацией.  
-  [Демо](https://demo-link.com) | [Код](https://github.com/username/travelgo)
-- **Todo App** — таск-менеджер с drag-and-drop.  
-  [Демо](https://demo-link.com) | [Код](https://github.com/username/todo-app)
-- **Crypto Dashboard** — аналитическая панель с API данных о криптовалютах.  
+ 
+  [Демо этого проекта](https://rocont-project.vercel.app/)
+- **Food-project** — мини интернет магазин на state manager Redux-Toolkit  
+  [Демо](https://my-food-project-ten.vercel.app/) | [Код](https://github.com/Guseyn9/Food-project)
+- **Lagoona** — красивый сайт для сети отелей  
   [Демо](https://demo-link.com) | [Код](https://github.com/username/crypto-dashboard)
 
 ---
