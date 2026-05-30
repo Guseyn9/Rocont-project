@@ -22,7 +22,7 @@
 - **Lagoona** — красивый сайт для сети отелей с приятным дизайном  
   [Демо](https://lagoona-one.vercel.app/) | [Код](https://github.com/Guseyn9/Lagoona)
 - **W-wawe** — музыкальный сайт с приятным дизайном и анимациями  
-  [Демо](https://w-wawe-cyan.vercel.app/) | [Код](https://github.com/Guseyn9/W-wawe)
+  [Демо](https://w-wave-lac.vercel.app/) | [Код](https://github.com/Guseyn9/W-wave)
 - **High-pass** — сайт для любителей кино-фильмов, собранный с помощью Gulp сборки   
   [Демо](https://high-pass-snowy.vercel.app/) | [Код](https://github.com/Guseyn9/High-pass)
 
